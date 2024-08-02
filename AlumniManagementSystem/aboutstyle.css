@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('ssn.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 8, 30, 0.221),rgba(4, 8, 30, 0.221),url('ssnlogo.png'));
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #030b397d;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #07d2d2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.about {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the two boxes */
+    flex-wrap: wrap; /* Wrap if the screen size is small */
+}
+
+.description {
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px); 
+    width: 45%; /* Adjusted width for two boxes horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.description h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.description ul {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: disc;
+}
+
+/* Added style for nested bullet points */
+.description ul ul {
+    list-style-type: circle;
+    margin-top: 5px;
+}
+
+/* Added left padding for team members' names */
+.description ul ul li {
+    padding-left: 20px;
+}
+
+.description a {
+    color: #07d2d2;
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+footer { 
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px); 
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
